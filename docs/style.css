@@ -19,6 +19,7 @@ h1 {
     font-size: 3rem;
     text-align: center;
     margin: 0;
+    margin-top: 2rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -63,7 +64,7 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     background-color: rgba(0, 0, 0, 0.6);
     color: var(--color-3);
     text-align: center;
@@ -124,4 +125,47 @@ h1 {
 
 .icon svg {
     color: inherit;
+}
+
+
+.nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.nav li {
+    height: 3rem;
+    line-height: 3rem;
+    margin: 0;
+    flex: 1;
+    border: 1px solid var(--color-3);
+}
+
+/* first border radious bottom left 1rem */
+.nav li:first-child {
+    border-bottom-left-radius: 1rem;
+}
+
+/* last border radious bottom right 1rem */
+.nav li:last-child {
+    border-bottom-right-radius: 1rem;
+}
+
+.nav a {
+    display: block;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    color: var(--color-1);
+}
+
+.nav a:hover {
+    background-color: var(--color-1);
+    color: var(--color-3);
 }
