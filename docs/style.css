@@ -108,9 +108,8 @@ h1 {
 
 .icons {
     display: flex;
-    justify-content: center;
     margin-top: 1rem;
-    color: var(--color-5)
+    color: var(--color-1)
 }
 
 .icons a {
@@ -168,4 +167,29 @@ h1 {
 .nav a:hover {
     background-color: var(--color-1);
     color: var(--color-3);
+}
+
+.icons-vertical {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    color: var(--color-1);
+    text-decoration: none;
+}
+
+.icons-vertical a {
+    text-decoration: none;
+    line-height: 2rem;
+    list-style: none;
+}
+
+.icons-vertical span {
+    margin-left: 0.5rem;
+    display: inline-block;
+    transform: translateY(-0.4em);
+    -webkit-transform: translateY(-0.4em);
+    -moz-transform: translateY(-0.4em);
+    -ms-transform: translateY(-0.4em);
 }
