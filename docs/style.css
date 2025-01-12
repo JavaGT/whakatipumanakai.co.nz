@@ -4,17 +4,55 @@ html {
     --color-3: #F8F8F9;
     --color-4: #B96213;
     --color-5: #BDC79D;
+    --color-dark: #181814;
     --header-radius: 0.8rem;
     background: var(--color-5);
     font-family: sans-serif;
 }
 
+.header-content {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    margin-top: 4rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Coustard", serif;
+    font-weight: 400;
+    font-style: normal;
+
+    /* font-family: "Coustard", serif;
+    font-weight: 900;
+    font-style: normal; */
+}
+
+p {
+    line-height: 1.4;
+}
+
+.banner-image {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.8rem;
+    background-position-y: -30rem;
+    margin: 0 auto;
+    display: block;
+}
+
 a {
-    color: var(--color-1);
+    color: var(--color-2);
 }
 
 a:visited {
-    color: var(--color-2);
+    color: var(--color-1);
 }
 
 a:hover {
@@ -34,8 +72,16 @@ body {
     margin: 0;
     margin-top: 2rem;
     font-family: "Atma", serif;
-    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lilita One", serif;
+    font-weight: 400;
     font-style: normal;
+    /* text-transform: uppercase; */
+    color: #ddd;
+    filter: drop-shadow(4px 4px 0 var(--color-2));
+
+    /* font-weight: 500; */
+    /* font-style: normal; */
 }
 
 @media screen and (max-width: 600px) {
@@ -146,6 +192,7 @@ body {
 }
 
 .nav li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     height: 3rem;
     line-height: 3rem;
     margin: 0;
@@ -194,6 +241,7 @@ body {
     text-decoration: none;
     line-height: 2rem;
     list-style: none;
+    color: var(--color-2);
 }
 
 .icons-vertical span {
