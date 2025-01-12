@@ -4,6 +4,7 @@ html {
     --color-3: #F8F8F9;
     --color-4: #B96213;
     --color-5: #BDC79D;
+    --header-radius: 0.8rem;
     background: var(--color-5);
     font-family: sans-serif;
 }
@@ -64,7 +65,6 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* padding: 1rem; */
     background-color: rgba(0, 0, 0, 0.6);
     color: var(--color-3);
     text-align: center;
@@ -72,7 +72,7 @@ h1 {
 
 .header {
     margin-top: 1rem;
-    border-radius: 1rem;
+    border-radius: var(--header-radius);
     overflow: hidden;
 }
 
@@ -141,17 +141,19 @@ h1 {
     line-height: 3rem;
     margin: 0;
     flex: 1;
-    border: 1px solid var(--color-3);
+    border: 0.2px solid var(--color-5);
+    border-right: none;
 }
 
 /* first border radious bottom left 1rem */
 .nav li:first-child {
-    border-bottom-left-radius: 1rem;
+    border-bottom-left-radius: var(--header-radius)
 }
 
 /* last border radious bottom right 1rem */
 .nav li:last-child {
-    border-bottom-right-radius: 1rem;
+    border-bottom-right-radius: var(--header-radius);
+    border-right: 0.2px solid var(--color-5);
 }
 
 .nav a {
@@ -159,9 +161,9 @@ h1 {
     text-align: center;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(26, 50, 9, 0.787);
     text-decoration: none;
-    color: var(--color-1);
+    color: #fffC
 }
 
 .nav a:hover {
