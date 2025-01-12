@@ -15,7 +15,16 @@ html {
 }
 
 h2 {
-    margin-top: 4rem;
+    margin-top: 2rem;
+    border-bottom-style: dotted;
+    border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    margin-bottom: 0.2rem;
+}
+
+/* only the first h2 of any */
+h2:first-of-type {
+    margin-top: 1.5rem;
 }
 
 h1,
@@ -24,9 +33,15 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Coustard", serif;
+
+    /* letter-spacing: 1rem; */
+    font-family: "Bree Serif", serif;
     font-weight: 400;
     font-style: normal;
+
+    /* font-family: "Coustard", serif;
+    font-weight: 400;
+    font-style: normal; */
 
     /* font-family: "Coustard", serif;
     font-weight: 900;
@@ -35,6 +50,11 @@ h6 {
 
 p {
     line-height: 1.4;
+    margin-bottom: 0.8rem;
+}
+
+p+p {
+    margin-top: 0;
 }
 
 .banner-image {
@@ -69,6 +89,7 @@ body {
 
 .header-title {
     font-size: 3.3rem;
+    letter-spacing: 0.04em;
     text-align: center;
     margin: 0;
     margin-top: 2rem;
@@ -253,4 +274,25 @@ body {
     -webkit-transform: translateY(-0.4em);
     -moz-transform: translateY(-0.4em);
     -ms-transform: translateY(-0.4em);
+}
+
+/* hr.dashed {
+    background-color: transparent;
+    clear: both;
+    }
+    */
+
+/* hr {
+    background-color: transparent;
+    border-style: none;
+    border-top-style: dotted;
+    border-top: 2px dashed var(--color-1);
+    height: 0px;
+    opacity: 0.5;
+    margin-top: 3rem;
+    width: 40%;
+} */
+
+hr {
+    display: none;
 }
