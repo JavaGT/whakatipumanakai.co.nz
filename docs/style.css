@@ -305,3 +305,24 @@ body {
 hr {
     display: none;
 }
+
+.blocks {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blocks li {
+    flex: 1;
+    width: 100%;
+    /* max-width: 300px; */
+    min-width: 200px;
+    margin: 0.2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.blocks li h3 {
+    margin-top: 0;
+}
