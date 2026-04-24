@@ -31,6 +31,53 @@ h2 {
     margin-bottom: 0.2rem;
 }
 
+/* Skip link for accessibility */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--color-1);
+    color: var(--color-3);
+    padding: 0.5rem 1rem;
+    z-index: 100;
+    text-decoration: none;
+    border-radius: 0 0 0.5rem 0;
+    font-family: 'Lucida Sans', sans-serif;
+    transition: top 0.2s ease;
+}
+
+/* Visually hidden but accessible to screen readers */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Focus styles for accessibility */
+a:focus-visible {
+    outline: 3px solid var(--color-4);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+.nav a:focus-visible {
+    outline-offset: -3px;
+}
+
+.grid-item a:focus-visible {
+    outline-offset: 4px;
+}
+
 /* only the first h2 of any */
 h2:first-of-type {
     margin-top: 1.5rem;
@@ -102,17 +149,13 @@ body {
     text-align: center;
     margin: 0;
     margin-top: 2rem;
-    font-family: "Atma", serif;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-family: "Lilita One", serif;
     font-weight: 400;
     font-style: normal;
     /* text-transform: uppercase; */
     color: #ddd;
     filter: drop-shadow(4px 4px 0 var(--color-2));
-
-    /* font-weight: 500; */
-    /* font-style: normal; */
+    transition: filter 0.2s ease;
 }
 
 @media screen and (max-width: 600px) {
@@ -142,6 +185,12 @@ body {
     max-width: 400px;
     max-height: 500px;
     overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .grid-item .img {
@@ -151,6 +200,7 @@ body {
     background-position: center;
     border-radius: 0.2rem;
     margin-bottom: 2.3rem;
+    transition: transform 0.2s ease;
 }
 
 .header-content {
@@ -255,6 +305,11 @@ body {
 }
 
 .nav a:hover {
+    background-color: var(--color-1);
+    color: var(--color-3);
+}
+
+.nav a.active {
     background-color: var(--color-1);
     color: var(--color-3);
 }

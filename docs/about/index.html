@@ -26,6 +26,7 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <div class="header" style="background-image: url(/images/header.jpg);">
         <div class="header-content">
             <a href="/" class="header-logo">
@@ -37,7 +38,7 @@
                     <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="/about">What we do</a>
+                    <a href="/about" class="active">What we do</a>
                 </li>
                 <li>
                     <a href="/story">Our story</a>
@@ -49,6 +50,7 @@
         </div>
     </div>
 
+    <main id="main-content">
     <h1>What we do</h1>
     <p>Our mission is to inspire and educate about kai in Aotearoa.
     </p>
@@ -59,7 +61,8 @@
         <li>We challenge ourselves to an annual wero kai (a period of eating only self-produced or traded food from the
             garden, forest, and ocean) so we can deepen the knowledge we have to share</li>
     </ul>
-    <img class="banner-image" src="/images/header.jpg" alt="">
+    <img class="banner-image" src="/images/header.jpg" alt="An orange flower in focus with rows of corn and blurry trees behind">
+
 
 
     <h2>Wānanga</h2>
@@ -88,18 +91,21 @@
     </p>
     <div class="grid">
         <div class="grid-item">
-            <a target="_blank" href="https://www.instagram.com/p/DEjUtzSy77S/">
+            <a target="_blank" href="https://www.instagram.com/p/DEjUtzSy77S/" aria-label="View Instagram post about garden harvest">
                 <div class="img" style="background-image: url(/images/1.jpg);"></div>
+                <span class="visually-hidden">Purple flower glowing next to a tree trunk with text overlay reading 'Mahi mara o te wa Homemade fertiliser'</span>
             </a>
         </div>
         <div class="grid-item">
-            <a target="_blank" href="https://www.instagram.com/p/DDGc_yfyCaR/">
+            <a target="_blank" href="https://www.instagram.com/p/DDGc_yfyCaR/" aria-label="View Instagram post about preserving">
                 <div class="img" style="background-image: url(/images/2.jpg);"></div>
+                <span class="visually-hidden">Red and purple flower with many stems under a clear blue sky with forested hills in the background</span>
             </a>
         </div>
         <div class="grid-item">
-            <a target="_blank" href="https://www.instagram.com/reel/C7BenzlSaSu/">
+            <a target="_blank" href="https://www.instagram.com/reel/C7BenzlSaSu/" aria-label="View Instagram reel about seasonal growing">
                 <div class="img" style="background-image: url(/images/3.jpg);"></div>
+                <span class="visually-hidden">Man fishing over rocks with a second rod wedged in, line cast far out, gray sky and foggy landmass behind</span>
             </a>
         </div>
     </div>
@@ -112,6 +118,7 @@
         that we have more knowledge to teach and share. It’s also a time we enjoy; connecting to the place we live in,
         eating nourishing food, and exploring an alternative way of being in the world.</p>
 
+    </main>
 </body>
 
 </html>
